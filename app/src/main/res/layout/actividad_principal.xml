@@ -6,41 +6,54 @@
     android:weightSum="1">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_gravity="center_horizontal" />
-
-    <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="Lector de Archivos"
+        android:id="@+id/t1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:gravity="center" />
 
-        <EditText
-            android:layout_width="265dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" />
-    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.09" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView"
-        android:layout_weight="0.82">
+        android:layout_weight="0.65">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/T"
-            android:layout_weight="0.77"
-            android:hint="editText2editText2editText2editText2editText2editText2editText2editText2editText2editText2editText2editText2editText2editText2editText2editText2editText24" />
+            android:id="@+id/etSalida"
+            android:layout_weight="0.77" />
     </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar archivo"
+            android:onClick="guardararchivo"
+            android:id="@+id/btnGuardar" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leer archivo"
+            android:onClick="larchivo"
+            android:id="@+id/btnCerrar" />
+    </LinearLayout>
 
 </LinearLayout>
